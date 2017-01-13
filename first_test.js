@@ -7,7 +7,7 @@ var options = {
 webdriverio
     .remote(options)
     .init()
-    .url('http://www.google.com')
+    .url('http://www.ufa.24ff.ru/')
     .getTitle().then(function(title) {
         console.log('Title was: ' + title);
     })
