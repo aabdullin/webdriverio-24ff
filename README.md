@@ -1,7 +1,8 @@
 # webdriverio-24ff
 Automation framework for http://ufa.24ff.ru/
 
-Install Node.JS, Java       
+Install Node.JS: https://nodejs.org/en/
+Install NPM: 
 Open terminal       
 $ npm install webdriverio --save-dev      
 $ ./node_modules/.bin/wdio --help     
