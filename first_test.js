@@ -7,8 +7,9 @@ var options = {
 webdriverio
     .remote(options)
     .init()
-    .url('http://www.ufa.24ff.ru/')
-    .getTitle().then(function(title) {
-        console.log('Title is: ' + title);
-    })
+    .url('http://www.intersport-ufa.ru/')
+    .getText("//ul[@id='mylist']/li[3]/div/div/a").then(function (link) {
+      // use console.log() to output information
+      console.log('Link found: ' + link);
+    this.timeout(10000);
     .end();
