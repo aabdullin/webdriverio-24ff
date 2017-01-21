@@ -9,5 +9,5 @@ webdriverio
     .init()
     .url('http://www.intersport-ufa.ru/')
     .click("//ul[@id='mylist']/li[3]/div/div/a")
-    .pause('4000')
+    .pause('3000')
     .end();
