@@ -1,18 +1,18 @@
 {
-  "name": "webdriverio-24ff",
+  "name": "webdriverio-course-content",
   "version": "1.0.0",
-  "description": "Test Automation framework for 24ff.ufa",
+  "description": "WebdriverIO Course Content (examples, exercises and sample site)",
   "main": "index.js",
   "scripts": {
     "start": "http-server sample-site -p 8303",
-    "test": "npm test",
+    "test": "wdio",
     "ghPages": "gh-pages -d sample-site"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/klamping/webdriverio-course-content.git"
   },
-  "author": "Artur Abdullin",
+  "author": "Kevin Lamping",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/klamping/webdriverio-course-content/issues"
@@ -23,6 +23,10 @@
     "http-server": "^0.9.0"
   },
   "devDependencies": {
-    "wdio-mocha-framework": "^0.5.8"
+    "chai": "^3.5.0",
+    "selenium-standalone": "^5.11.1",
+    "wdio-mocha-framework": "^0.5.8",
+    "wdio-selenium-standalone-service": "0.0.7",
+    "webdriverio": "^4.6.2"
   }
 }

@@ -1,19 +1,25 @@
-# webdriverio-24ff
+# WebdriverIO Course Content
 
-2. Download latest selenium standalone server
-$ curl -O http://selenium-release.storage.googleapis.com/3.0/selenium-server-standalone-3.0.1.jar
+Companion content for [Automated Testing with WebdriverIO](http://learnwebdriverio.com/) course.
 
-3. Download the latest version geckdriver for your environment and unpack it in your project directory
-Linux 64 bit
-$ curl -L https://github.com/mozilla/geckodriver/releases/download/v0.11.1/geckodriver-v0.11.1-linux64.tar.gz | tar xz
+## Installation
 
-4. Start selenium standalone server
-java -jar -Dwebdriver.gecko.driver=./geckodriver selenium-server-standalone-3.0.1.jar
+You must have [Node.js](https://www.nodejs.org/) installed.
 
-5. Download WebdriverIO
-$ npm install webdriverio
+```sh
+npm install
+```
 
-6. Create a test file (test.js) with the following content
+## Usage
 
-7. Run your test file
-$ node test.js
+Install the Dependencies:
+
+```sh
+npm install
+```
+
+Run the test server:
+
+```sh
+npm start
+```
