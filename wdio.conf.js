@@ -3,10 +3,10 @@ console.log ("here")
 var baseUrl = "http://127.0.0.1:8303";
 
 if (process.env.SERVER === "prod") {
-  baseUrl = "http://www.kevinlamping.com/webdriverio-course-content";
+  baseUrl = "https://bloombees.com/";
 }
 
-var timeout = process.env.DEBUG ? 9999999 : 10000;
+var timeout = process.env.DEBUG ? 9999999 : 100000;
 
 exports.config = {
 
@@ -30,6 +30,8 @@ exports.config = {
       './test/assert.js',
       './test/chai-assert.js',
       './test/chai-should.js',
+      './test/chai-expect.js',
+      './test/faq.js'
     ],
     //
     // ============
