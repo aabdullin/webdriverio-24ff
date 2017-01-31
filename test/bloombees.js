@@ -15,7 +15,7 @@ describe("Login", function () {
     // set password
 
     browser.click('#content-compiled');
-    // click button
+    // click button 
 
     var url = browser.getUrl();
     expect(url).to.include('https://bloombees.com/private/dashboard', 'URL Mismatch');
