@@ -3,10 +3,10 @@ console.log ("here")
 var baseUrl = "http://127.0.0.1:8303";
 
 if (process.env.SERVER === "prod") {
-  baseUrl = "https://bloombees.com/";
+  baseUrl = 'http://www.kevinlamping.com/webdriverio-course-content/';
 }
 
-var timeout = process.env.DEBUG ? 9999999 : 100000;
+var timeout = process.env.DEBUG ? 9999999 : 10000;
 
 exports.config = {
 
@@ -24,14 +24,15 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
-      './test/shop-button.js',
-      './test/shop-button-sync.js',
-      './test/test.js',
       './test/assert.js',
+      './test/bloombees.js',
       './test/chai-assert.js',
       './test/chai-should.js',
       './test/chai-expect.js',
-      './test/faq.js'
+      './test/debug.js',
+      './test/shop-button.js',
+      './test/shop-button-sync.js',
+      './test/test.js',
     ],
     //
     // ============
@@ -92,7 +93,7 @@ exports.config = {
     baseUrl: baseUrl,
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 1000000,
+    waitforTimeout: 100000,
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
