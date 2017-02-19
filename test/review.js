@@ -58,11 +58,28 @@ describe('The product review form', function() {
       browser.submitForm("#review-content");
 
       var isMainErrorShowing = browser.isVisible("p=There are some errors in your review.")
-      expect(isErrorShowing).to.be.false;
+      var isContentErrorShowing = browser.isVisible("p=A review without text isn't much of a review.")
+
+      expect(isMainErrorShowing).to.be.false;
+      expect(isContentErrorShowing).to.be.false;
 
   });
 
 
-  // it should focus an error message if the input is wrong
+  it.only ('should focus an error message if the input is wrong', function() {
+      var emailHasFocus = browser.hasFocus("#review-email");
+      expect(emailHasFocus, "Email should not have focus").to.be.false;
+
+      browser.submitForm("form");
+
+      emailHasFocus = browser.hasFocus("#review-email");
+      expect(emailHasFocus, "Email should now have focus").to.be.true;
+
+      browser.setValue("#review-email", "valid@example.com");
+      browser.submitForm("form");
+
+      var contentHasFocus = browser.hasFocus("#review-content");
+      expect(contentHasFocus, "review content field should have focus").to.be.true;
+  });
 
 });
