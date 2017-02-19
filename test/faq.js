@@ -10,13 +10,31 @@ describe("Homepage FAQ Accordion", function(){
     expect(firstHeight.parsed.value).to.be.greaterThan(0);
   });
 
-  it("should not show the other content"), function(){
-    var secondHeight = browser.getCssProperty(".accordion .accordion-item:nth-of-type(2) .accordion-content", "height");
+  it("should not show other content", function(){
+    var secondDisplay = browser.getCssProperty(".accordion .accordion-item:nth-of-type(2) .accordion-content", "display");
 
-    console.log(secondHeight);
+    console.log(secondDisplay);
 
-    expect(secondHeight.parsed.value).to.equal(0);
+    expect(secondDisplay.parsed.value).to.equal('none');
   })
 
+  it("should expand/hide content on click", function(){
+    browser.click(".accordion .accordion-item:nth-of-type(2) a");
+    browser.pause(500);
+
+    var secondHeight = browser.getCssProperty(".accordion .accordion-item:nth-of-type(2) .accordion-content", "height");
+    console.log(secondHeight);
+
+
+    expect(secondHeight.parsed.value).to.be.greaterThan(0);
+    var firstDisplay = browser.getCssProperty(".accordion .accordion-item:first-child .accordion-content", "display");
+    console.log(firstDisplay);
+
+
+
+    expect(firstDisplay.parsed.value).to.equal('none');
+
+
+  })
 
 })
