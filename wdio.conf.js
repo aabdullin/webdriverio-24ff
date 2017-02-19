@@ -30,6 +30,7 @@ exports.config = {
       './test/chai-should.js',
       './test/chai-expect.js',
       './test/debug.js',
+      './test/faq.js',
       './test/shop-button.js',
       './test/shop-button-sync.js',
       './test/test.js',
