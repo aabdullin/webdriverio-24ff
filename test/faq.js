@@ -19,8 +19,9 @@ describe("Homepage FAQ Accordion", function(){
   })
 
   it("should expand/hide content on click", function(){
+    this.timeout(15000);
     browser.click(".accordion .accordion-item:nth-of-type(2) a");
-    browser.pause(500);
+    browser.pause(5000);
 
     var secondHeight = browser.getCssProperty(".accordion .accordion-item:nth-of-type(2) .accordion-content", "height");
     console.log(secondHeight);
