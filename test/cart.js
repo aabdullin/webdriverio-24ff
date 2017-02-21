@@ -53,6 +53,18 @@ describe ("Cart functionality", function() {
       browser.waitForValue(qty, 3000, true);
     });
 
+
+    it('should reset button text after purchase completes', function () {
+      // wait for button to return back to 'buy now'
+      browser.waitUntil(function () {
+        return browser.getText(btn) !== 'Purchasing...'
+      }, 3000)
+      // verify button now says 'buy now'
+      var btnText = browser.getText(btn);
+      expect(btnText).to.equal('Buy Now');
+    });
+
+
     it('should hide thank you message after clicking close button', function () {
       var thankYou = ".callout*=Thank you human";
 
