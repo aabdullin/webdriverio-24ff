@@ -6,6 +6,7 @@
   "scripts": {
     "start": "http-server sample-site -p 8303",
     "test": "wdio",
+    "test:watch": "onchange 'sample-site/**/*.[css,js,html]' 'test/**/*.js' -- wdio",
     "ghPages": "gh-pages -d sample-site"
   },
   "repository": {
