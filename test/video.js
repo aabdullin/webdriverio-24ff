@@ -3,7 +3,7 @@ browser.addCommand('isVideoPaused', function () {
     return video[0].paused;
   })
   return isPaused;
-})
+});
 
 describe('About us video', function () {
   beforeEach(function () {
