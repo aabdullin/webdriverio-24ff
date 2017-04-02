@@ -3,8 +3,10 @@ var notifier = require('node-notifier');
 var baseUrl = 'http://127.0.0.1:8303';
 
 if (process.env.SERVER === "prod") {
-  baseUrl = 'http://www.kevinlamping.com/webdriverio-course-content';
+  baseUrl = 'http://www.kevinlamping.com/';
 }
+
+// https://bloombees.com/login?lang=en
 
 var timeout = process.env.DEBUG ? 99999999 : 10000;
 
@@ -24,7 +26,22 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
-        // 'path/to/excluded/files'
+      /*  './test/assert.js'
+        './test/cart.js'
+        './test/cart.page.js'
+        './test/chai-assert.js'
+        './test/chai-expect.js'
+        './test/chai-should.js'
+        './test/debug.js'
+        './test/faq.js'
+        './test/quri.js'
+        './test/review.js'
+        './test/review2.js'
+        './test/shop-button-sync.js'
+        './test/shop-button.js'
+        './test/test.js'
+        './test/video.js'
+        // 'path/to/excluded/files'  */
     ],
     //
     // ============

@@ -2,7 +2,7 @@ describe("Login", function () {
   it("should link to the login page", function() {
     browser.url('/');
 
-    browser.click("/html/body/top-nav/nav/nav/md-list/md-list-item[2]/section/div[2]/button[2]");
+    //browser.click("/html/body/top-nav/nav/nav/md-list/md-list-item[2]/section/div[2]/button[2]");
     // click log in button
     browser.waitForEnabled('#content-compiled', 3000);
 
