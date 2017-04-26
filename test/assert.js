@@ -15,7 +15,7 @@ describe("Shop CTA Button", function () {
     var url = browser.getUrl()
     var containsFile = url.includes('product-page.html')
 
-    assert.ok(containsFile, 'URL mismatch');
+    assert.ok(containsFile, 'URL mismatch ');
     console.log('Url is ' + url);
   });
 });
