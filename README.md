@@ -1,9 +1,6 @@
-# WebdriverIO Course Content
 
-Companion content for [Automated Testing with WebdriverIO](http://learnwebdriverio.com/) course.
 
-## Installation
-
+## Installat
 You must have [Node.js](https://www.nodejs.org/) installed.
 
 ```sh
