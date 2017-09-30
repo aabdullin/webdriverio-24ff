@@ -1,7 +1,7 @@
 
 
-## Installat
-You must have [Node.js](https://www.nodejs.org/) installed.
+## Installation
+You should have [Node.js](https://www.nodejs.org/) installed.
 
 ```sh
 npm install
